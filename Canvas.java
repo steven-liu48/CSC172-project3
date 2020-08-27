@@ -1,11 +1,3 @@
-/*
-Name: Winnie Wan
-Email: wwan5@u.rochester.edu
-Name: Xiaoxiang "Steven" Liu
-Email: xliu102
-Project 3
-Date: 04/16/19
- */
 import javax.swing.*;
 import java.awt.*;
 import java.io.IOException;
