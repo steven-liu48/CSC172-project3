@@ -1,21 +1,9 @@
-Name: Winnie Wan
-
-Name: Xiaoxiang "Steven" Liu
-
-Date: April 22, 2019
-Project 3
-
-This code has the following classes:
-StreetMap.java, Edge.java, Vertex.java, Info.java, Haversine.java, Canvas,java
-
-StreetMap.java is the class that brings everything together with a main method and
-a dijkstra's algorithm.
-Edge.java has the information of the first and second vertex, its ID, and its weight
-Vertex.java has the information of the longitude, latitude, ID, and it also has an adjacency Linkedlist
-which is used to collect all the adjacency vertices that connects to the specific individual vertex
-Info.java is essentially the chart that we use for dijkstra's algorithm (node, weight, parent)
-Haversine.java is the weight calculation formula taken from Jason Winn and Vlad
-Canvas.java draws the map and highlights the shortest path
+ - StreetMap.java is the class that brings everything together with a main method and the dijkstra's algorithm.
+ - Edge.java has the information of the first and second vertex, its ID, and its weight
+ - Vertex.java has the information of the longitude, latitude, ID, and it also has an adjacency Linkedlist which is used to collect all the adjacency vertices that connects to the specific individual vertex
+ - Info.java is essentially the chart that we use for dijkstra's algorithm (node, weight, parent)
+ - Haversine.java is the weight calculation formula taken from Jason Winn and Vlad
+ - Canvas.java draws the map and highlights the shortest path
 
 Essentially, there is a hashmap of vertices which has all the information of each node (each vertices
 have their own adjacency linkedlist) and a hashmap of info. We use both of these to run dijkstra's algorithm.
@@ -32,23 +20,3 @@ we can easily use Vertex class, so that optimization was huge.
 
 The expected runtime of this algorithm is O(E + V + ElogV).
 Reading the file is O(E+V). Dijkstra's algorithm is O(ElogV). Drawing is O(E + V).
-
-Distributed Work Load:
-Winnie:
-- StreetMap.java: implemented main class and dijkstra's algorithm with Steven
-- Canvas.java: implemented the paintComponent with Steven.
-- Info.java: implemented necessary components to dijkstra's algorithm.
-- Haversine.java: modified from km to m with the help of Vlad.
-
-Steven:
-- StreetMap,java: implemented dijkstra's algorithm with Winnie
-- Canvas.java: implemented the painComponent with Winnie
-- Edge.java and Vertex.java: implemented the variables and methods.
-- Haversine.java: implemented code from Jason Winn
-
-EXTRA CREDIT:
-1) We have inserted a start pointer/markers and end pointer/markers using a PNG file taken from Google Images.
-It is within the Canvas.java (Graphics) class. It was implemented using an Image class to read
-the PNG file and their method to resize the image. We also adjusted the x & y scale according to the PNG,
-so it will show up on the map more accurately and nicely.
-2) We also print out the distance on the map window, by calling the optimal distance generated from the class StreetMap.
