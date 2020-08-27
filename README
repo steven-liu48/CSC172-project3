@@ -1,6 +1,7 @@
  - StreetMap.java is the class that brings everything together with a main method and the dijkstra's algorithm.
  - Edge.java has the information of the first and second vertex, its ID, and its weight
- - Vertex.java has the information of the longitude, latitude, ID, and it also has an adjacency Linkedlist which is used to collect all the adjacency vertices that connects to the specific individual vertex
+ - Vertex.java has the information of the longitude, latitude, ID, and it also has an adjacency Linkedlist which
+   is used to collect all the adjacency vertices that connects to the specific individual vertex
  - Info.java is essentially the chart that we use for dijkstra's algorithm (node, weight, parent)
  - Haversine.java is the weight calculation formula taken from Jason Winn and Vlad
  - Canvas.java draws the map and highlights the shortest path
